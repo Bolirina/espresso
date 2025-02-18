@@ -9,7 +9,7 @@ from PyQt6.QtWidgets import QApplication, QMainWindow, QTableWidgetItem, QMessag
 class EditDB(QDialog):
     def __init__(self):
         super(EditDB, self).__init__()
-        uic.loadUi("main.ui", self)
+        uic.loadUi("addEditCoffeeForm.ui", self)
 
     def accept(self) -> None:
         con = sqlite3.connect('coffee.sqlite')
